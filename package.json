@@ -1,0 +1,20 @@
+{
+  "name": "netshoes-test-frontend",
+  "version": "1.0.0",
+  "description": "Netshoes Frontend Test",
+  "main": "app/app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/netshoes/netshoes-test-frontend.git"
+  },
+  "author": "Netshoes",
+  "license": "ISC",
+  "homepage": "https://github.com/netshoes/netshoes-test-frontend#readme",
+  "devDependencies": {
+    "chai": "4.1.2",
+    "eslint": "^4.19.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.9.0",
+    "mocha": "5.0.4"
+  }
+}
