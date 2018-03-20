@@ -7,6 +7,9 @@
     "type": "git",
     "url": "git+https://github.com/netshoes/netshoes-test-frontend.git"
   },
+  "scripts": {
+    "test": "NODE_ENV=test ./node_modules/.bin/mocha test/**/*.js"
+  },
   "author": "Netshoes",
   "license": "ISC",
   "homepage": "https://github.com/netshoes/netshoes-test-frontend#readme",
