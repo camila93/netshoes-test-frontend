@@ -89,7 +89,5 @@ describe('version 2 unit tests', () => {
     assert.equal(question2.compareVersion('00.0.0.00.010.2.2470.0.00.2', '0.00.0.00.10.2.2470.00.0.2'), 0);
     done();
   });
-
-
 });
 
