@@ -2,13 +2,14 @@
   "name": "netshoes-test-frontend",
   "version": "1.0.0",
   "description": "Netshoes Frontend Test",
-  "main": "app/app.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/netshoes/netshoes-test-frontend.git"
   },
   "scripts": {
-    "test": "NODE_ENV=test ./node_modules/.bin/mocha test/**/*.js"
+    "test": "NODE_ENV=test ./node_modules/.bin/mocha test/**/*.js",
+    "test-q1" : "NODE_ENV=test ./node_modules/.bin/mocha test/question1/index_test.js",
+    "test-q2" : "NODE_ENV=test ./node_modules/.bin/mocha test/question2/index_test.js"
   },
   "author": "Netshoes",
   "license": "ISC",

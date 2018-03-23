@@ -21,15 +21,16 @@ Outros exemplos podem ser verificados nos testes implementados  ```/netshoes-tes
 
 Regras e orientações:
 1. Uma chamada para hasNext() irá retornar se a stream ainda contem caracteres para processar;
-2. Uma chamada para getNext() irá retornar o próximo caractere a ser processado na stream;
+2. Uma chamada para next() irá retornar o próximo caractere a ser processado na stream ou 0 caso não possuam mais caracteres;
 3. Não será possível reiniciar o fluxo da leitura da Stream;
 4. Não poderá ser utilizado nenhum framework/lib, apenas código nativo. Dessa forma, não deve ser alterado o arquivo `package.json` do projeto;
 5. Não devem ser alterados ou adaptados os testes já implementados e disponibilizados pela Netshoes;
-6. Não deverá ser alterado o nome do método `firstChar` do arquivo `/netshoes-test-frontend/app/question1/index.js`. Assim como não poderá ser alterado o objeto já definido `streamApi`. 
+6. Não deverá ser alterado o nome do método `firstChar` do arquivo `/netshoes-test-frontend/app/question1/index.js`. Também não poderá ser alterado o objeto já definido `streamApi`. 
 7. Caso a Stream não possua caracteres que atendam aos requisitos, deverá ser retornado o caractere 0(Zero) conforme esperado pelos testes unitários;
-8. Não versione os códigos gerados por ferramenta/IDE;
-9. A aplicação necessita atender aos cenários de testes já implementados propostos;
-10. Para verificar se sua implementação está aderente aos testes unitários implementados, utilize o comando:<br />
+8. Você nunca receberá uma stream vazia. Isso, inclusive, já está tratado no objeto `streamApi` disponibilizado e com testes unitários implementados. 
+9. Não versione os códigos gerados por ferramenta/IDE;
+10. A aplicação necessita atender aos cenários de testes já implementados propostos;
+11. Para verificar se sua implementação está aderente aos testes unitários implementados, utilize o comando:<br />
     ```sh 
     npm run test-q1 
     ```

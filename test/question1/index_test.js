@@ -3,7 +3,6 @@ const question1 = require('../../app/question1');
 const { assert } = require('chai');
 
 describe('version 1 unit tests', () => {
-
   it('should return as output', (done) => {
     assert.equal(question1.firstChar('aAbBABacafe'), 'e');
     done();
@@ -64,5 +63,19 @@ describe('version 1 unit tests', () => {
     done();
   });
 
+  it('should return error when empty stream', (done) => {
+    assert.throws(() => { question1.firstChar(''); }, Error, 'Invalid stream');
+    done();
+  });
+
+  it('should return error when stream filled with empty spaces', (done) => {
+    assert.throws(() => { question1.firstChar('  '); }, Error, 'Invalid stream');
+    done();
+  });
+
+  it('should return error when stream filled with no content', (done) => {
+    assert.throws(() => { question1.firstChar(); }, Error, 'Invalid stream');
+    done();
+  });
 });
 
