@@ -1,0 +1,22 @@
+pipeline {
+  agent any
+  tools {
+    nodejs 'NodeJS v9.11.1'
+  }
+  options {
+    disableConcurrentBuilds()
+    buildDiscarder(logRotator(numToKeepStr: '5', artifactNumToKeepStr: '5'))
+  }
+  stages {
+  stage('Prepare Package') {
+      steps {
+        sh "npm install"
+      }
+    }
+    stage('Test') {
+      steps {
+        sh "npm run test"
+      }
+    }
+  }
+}
