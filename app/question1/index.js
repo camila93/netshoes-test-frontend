@@ -25,7 +25,7 @@ const firstChar = (input) => {
   var vogal = ['a','e','i','o','u'];  
   var aux = [];
   var cont = 0;
-
+  //test
   // TODO sua implementacao
   for(var i = 0; i <= input.length; i++) {
     aux[i] = myStream.next();
